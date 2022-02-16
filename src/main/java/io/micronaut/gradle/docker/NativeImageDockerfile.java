@@ -334,7 +334,7 @@ public abstract class NativeImageDockerfile extends Dockerfile implements Docker
                 return javaVersion;
             }
         }
-        return SUPPORTED_JAVA_VERSIONS.stream().reduce((x, y) -> y).orElse(8);
+        return SUPPORTED_JAVA_VERSIONS.stream().reduce((x, y) -> y).orElse(11);
     }
 
     @TaskAction
